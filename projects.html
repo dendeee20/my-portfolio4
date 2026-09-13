@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Projects | DENNIS VELEZ</title>
+<meta name="description" content="Project portfolio for DENNIS VELEZ — three documented projects with problem statements, tools used, contributions, outcomes, and sample output evidence." />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html">DENNIS VELEZ<span class="dot">.</span>dev</a>
+    <nav aria-label="Primary">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
+        <li><a href="career-goals.html">Career Goals</a></li>
+        <li><a href="gap-analysis.html">Gap Analysis</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to light mode">🌙</button>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" style="padding-bottom: 40px;">
+    <div class="container">
+      <span class="eyebrow">Project Portfolio</span>
+      <h1>What I've Built</h1>
+      <p class="hero-sub">
+        Three projects that show how I work end-to-end — from problem definition to deployment.
+        Each one lists my exact role, the problem it solved, the tools involved, my specific
+        contributions, and the outcome, along with sample output as evidence.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= PROJECT 1 ================= -->
+  <section style="padding-top: 0;">
+    <div class="container">
+
+      <article class="project-detail reveal">
+        <div class="project-detail-head">
+          <span class="project-status">Completed</span>
+          <h3>Grade Analytics &amp; Reporting Tool</h3>
+          <span class="project-role">Capstone Project — Lead Developer</span>
+        </div>
+
+        <div class="project-detail-grid">
+          <div class="project-detail-col">
+            <h4 class="pd-label">Problem Statement</h4>
+            <p>
+              Class advisers were consolidating prelim, midterm, and final scores by hand across
+              spreadsheets, which was slow and error-prone and made it hard to catch struggling
+              students early enough to help them.
+            </p>
+
+            <h4 class="pd-label">Technologies &amp; Tools</h4>
+            <div class="tag-list">
+              <span class="tag">Python</span>
+              <span class="tag">Django</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Bootstrap</span>
+              <span class="tag">Chart.js</span>
+            </div>
+
+            <h4 class="pd-label">Key Contributions</h4>
+            <ul class="pd-list">
+              <li>Designed the relational database schema for students, subjects, and grade components</li>
+              <li>Built the backend grade-computation logic with configurable weights per term</li>
+              <li>Developed an adviser dashboard with sortable tables and per-subject performance charts</li>
+              <li>Wrote unit tests for the grade-computation module</li>
+            </ul>
+
+            <h4 class="pd-label">Outcome &amp; Impact</h4>
+            <p>
+              Piloted with three sample class sections during the capstone defense. Manual grade
+              consolidation time dropped significantly, and the dashboard automatically flagged
+              at-risk students so advisers could follow up earlier.
+            </p>
+          </div>
+
+          <div class="project-detail-evidence">
+            <h4 class="pd-label">Evidence</h4>
+            <div class="evidence-frame">
+              <svg viewBox="0 0 480 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sample grade report dashboard showing a table of student averages and a bar chart of class performance by subject">
+                <rect width="480" height="320" fill="var(--bg)"/>
+                <rect width="480" height="30" fill="var(--surface)"/>
+                <circle cx="16" cy="15" r="4" fill="#e0655a"/>
+                <circle cx="30" cy="15" r="4" fill="var(--warning)"/>
+                <circle cx="44" cy="15" r="4" fill="var(--success)"/>
+                <text x="240" y="19" text-anchor="middle" font-family="monospace" font-size="11" fill="var(--text-faint)">grade_report.py — sample output</text>
+
+                <rect x="16" y="42" width="448" height="24" rx="4" fill="var(--accent-soft)"/>
+                <text x="26" y="58" fill="var(--accent)" font-size="11" font-weight="700">Student</text>
+                <text x="150" y="58" fill="var(--accent)" font-size="11" font-weight="700">Prelim</text>
+                <text x="212" y="58" fill="var(--accent)" font-size="11" font-weight="700">Midterm</text>
+                <text x="285" y="58" fill="var(--accent)" font-size="11" font-weight="700">Final</text>
+                <text x="335" y="58" fill="var(--accent)" font-size="11" font-weight="700">Average</text>
+                <text x="405" y="58" fill="var(--accent)" font-size="11" font-weight="700">Remarks</text>
+
+                <g font-family="Segoe UI, sans-serif" font-size="11" fill="var(--text-muted)">
+                  <text x="26" y="84">D. Santos</text><text x="150" y="84">88</text><text x="215" y="84">90</text><text x="285" y="84">92</text><text x="340" y="84">90.0</text>
+                  <text x="26" y="106">M. Cruz</text><text x="150" y="106">75</text><text x="215" y="106">78</text><text x="285" y="106">80</text><text x="340" y="106">77.7</text>
+                  <text x="26" y="128">R. Reyes</text><text x="150" y="128">95</text><text x="215" y="128">93</text><text x="285" y="128">96</text><text x="340" y="128">94.7</text>
+                  <text x="26" y="150">A. Lim</text><text x="150" y="150">68</text><text x="215" y="150">72</text><text x="285" y="150">75</text><text x="340" y="150">71.7</text>
+                </g>
+                <text x="405" y="84" font-size="10" fill="var(--success)" font-weight="600">Passed</text>
+                <text x="405" y="106" font-size="10" fill="var(--success)" font-weight="600">Passed</text>
+                <text x="405" y="128" font-size="10" fill="var(--success)" font-weight="600">Passed</text>
+                <text x="405" y="150" font-size="10" fill="var(--warning)" font-weight="600">At Risk</text>
+
+                <line x1="16" y1="164" x2="464" y2="164" stroke="var(--border)"/>
+                <text x="16" y="186" font-size="10" letter-spacing="0.5" fill="var(--text-faint)" font-weight="700">CLASS AVERAGE BY SUBJECT</text>
+
+                <rect x="30" y="200" width="40" height="90" fill="var(--border)"/>
+                <rect x="30" y="230" width="40" height="60" fill="var(--accent)"/>
+                <text x="50" y="305" text-anchor="middle" font-size="10" fill="var(--text-faint)">Math</text>
+
+                <rect x="120" y="200" width="40" height="90" fill="var(--border)"/>
+                <rect x="120" y="215" width="40" height="75" fill="var(--accent)"/>
+                <text x="140" y="305" text-anchor="middle" font-size="10" fill="var(--text-faint)">Science</text>
+
+                <rect x="210" y="200" width="40" height="90" fill="var(--border)"/>
+                <rect x="210" y="245" width="40" height="45" fill="var(--accent)"/>
+                <text x="230" y="305" text-anchor="middle" font-size="10" fill="var(--text-faint)">English</text>
+
+                <rect x="300" y="200" width="40" height="90" fill="var(--border)"/>
+                <rect x="300" y="222" width="40" height="68" fill="var(--accent)"/>
+                <text x="320" y="305" text-anchor="middle" font-size="10" fill="var(--text-faint)">Filipino</text>
+              </svg>
+            </div>
+            <p class="evidence-caption">Sample output — grade report dashboard (mock data for demonstration)</p>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ================= PROJECT 2 ================= -->
+  <section class="section-alt">
+    <div class="container">
+
+      <article class="project-detail reveal">
+        <div class="project-detail-head">
+          <span class="project-status">Deployed</span>
+          <h3>DevJourney — Personal Skills &amp; Career Portfolio</h3>
+          <span class="project-role">Personal Project — Solo Developer &amp; Designer</span>
+        </div>
+
+        <div class="project-detail-grid">
+          <div class="project-detail-col">
+            <h4 class="pd-label">Problem Statement</h4>
+            <p>
+              I needed one always-available place to show my technical skills, career direction,
+              and completed work to instructors and prospective employers, built with tools I
+              actually understand rather than a template I didn't write myself.
+            </p>
+
+            <h4 class="pd-label">Technologies &amp; Tools</h4>
+            <div class="tag-list">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3 (Grid/Flexbox)</span>
+              <span class="tag">Vanilla JavaScript</span>
+              <span class="tag">Netlify</span>
+              <span class="tag">Git/GitHub</span>
+            </div>
+
+            <h4 class="pd-label">Key Contributions</h4>
+            <ul class="pd-list">
+              <li>Built the full page structure and CSS component system from scratch, no framework</li>
+              <li>Implemented the dark/light theme toggle, persisted with <code>localStorage</code></li>
+              <li>Added responsive mobile navigation, scroll-reveal animations, and a skill filter bar</li>
+              <li>Wrote the project's README and AGENTS documentation for future maintainability</li>
+            </ul>
+
+            <h4 class="pd-label">Outcome &amp; Impact</h4>
+            <p>
+              Deployed live on Netlify. It's a living document I update every time I finish a new
+              skill, course, or project, and I've used it during a class presentation on
+              personal branding and portfolio-building.
+            </p>
+          </div>
+
+          <div class="project-detail-evidence">
+            <h4 class="pd-label">Evidence</h4>
+            <div class="evidence-frame">
+              <svg viewBox="0 0 480 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sample screenshot of the DevJourney portfolio homepage showing the navigation bar and hero section">
+                <rect width="480" height="300" fill="var(--bg)"/>
+                <rect width="480" height="26" fill="var(--surface)"/>
+                <circle cx="14" cy="13" r="4" fill="#e0655a"/>
+                <circle cx="28" cy="13" r="4" fill="var(--warning)"/>
+                <circle cx="42" cy="13" r="4" fill="var(--success)"/>
+                <rect x="140" y="6" width="200" height="14" rx="7" fill="var(--bg-alt)"/>
+                <text x="240" y="16" text-anchor="middle" font-family="monospace" font-size="9" fill="var(--text-faint)">dennisvelez.dev</text>
+
+                <rect x="0" y="26" width="480" height="34" fill="var(--surface)"/>
+                <text x="16" y="47" font-family="Segoe UI, sans-serif" font-size="12" font-weight="700" fill="var(--text)">DENNIS VELEZ<tspan fill="var(--accent)">.</tspan>dev</text>
+                <text x="315" y="47" font-size="9" fill="var(--text-muted)">Home</text>
+                <text x="352" y="47" font-size="9" fill="var(--text-muted)">Skills</text>
+                <text x="388" y="47" font-size="9" fill="var(--accent)">Projects</text>
+                <circle cx="455" cy="43" r="9" fill="var(--bg)" stroke="var(--border)"/>
+
+                <text x="240" y="100" text-anchor="middle" font-size="9" letter-spacing="1" fill="var(--accent)" font-weight="700">WELCOME TO MY PORTFOLIO</text>
+                <text x="240" y="128" text-anchor="middle" font-size="18" font-weight="700" fill="var(--text)">Hi, I'm Dennis Velez —</text>
+                <text x="240" y="150" text-anchor="middle" font-size="18" font-weight="700" fill="var(--accent)">Aspiring Software Developer</text>
+                <text x="240" y="176" text-anchor="middle" font-size="10" fill="var(--text-muted)">Building practical, real-world skills through coursework,</text>
+                <text x="240" y="190" text-anchor="middle" font-size="10" fill="var(--text-muted)">personal projects, and continuous self-directed learning.</text>
+
+                <rect x="168" y="210" width="92" height="28" rx="6" fill="var(--accent)"/>
+                <text x="214" y="228" text-anchor="middle" font-size="10" font-weight="700" fill="#06121f">View My Skills</text>
+                <rect x="268" y="210" width="100" height="28" rx="6" fill="none" stroke="var(--border)"/>
+                <text x="318" y="228" text-anchor="middle" font-size="10" font-weight="700" fill="var(--text)">My Career Goals</text>
+
+                <line x1="150" y1="259" x2="330" y2="259" stroke="var(--border)"/>
+                <text x="240" y="280" text-anchor="middle" font-size="9" fill="var(--text-faint)">🌙 Dark / ☀️ Light theme toggle · Responsive nav</text>
+              </svg>
+            </div>
+            <p class="evidence-caption">Sample screenshot — homepage hero section</p>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ================= PROJECT 3 ================= -->
+  <section>
+    <div class="container">
+
+      <article class="project-detail reveal">
+        <div class="project-detail-head">
+          <span class="project-status">Completed</span>
+          <h3>Student Management System</h3>
+          <span class="project-role">Course Project — Backend Developer (Java, OOP)</span>
+        </div>
+
+        <div class="project-detail-grid">
+          <div class="project-detail-col">
+            <h4 class="pd-label">Problem Statement</h4>
+            <p>
+              Practiced object-oriented design and data handling by replacing spreadsheet-based
+              student record-keeping with a small desktop application for adding, editing, and
+              deactivating student records.
+            </p>
+
+            <h4 class="pd-label">Technologies &amp; Tools</h4>
+            <div class="tag-list">
+              <span class="tag">Java</span>
+              <span class="tag">Swing</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">JDBC</span>
+            </div>
+
+            <h4 class="pd-label">Key Contributions</h4>
+            <ul class="pd-list">
+              <li>Modeled Student, Course, and Enrollment as classes with clear encapsulation</li>
+              <li>Implemented CRUD operations against a MySQL database using JDBC</li>
+              <li>Built a Swing interface with a searchable, sortable student table</li>
+              <li>Added input validation and duplicate student-ID checks</li>
+            </ul>
+
+            <h4 class="pd-label">Outcome &amp; Impact</h4>
+            <p>
+              Completed as an Object-Oriented Programming course requirement. It gave me hands-on
+              practice with class design and database integration patterns that carried over into
+              later coursework and this portfolio's own backend thinking.
+            </p>
+          </div>
+
+          <div class="project-detail-evidence">
+            <h4 class="pd-label">Evidence</h4>
+            <div class="evidence-frame">
+              <svg viewBox="0 0 480 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sample output of the Java student management system showing a student records table with add, edit, and delete actions">
+                <rect width="480" height="260" fill="var(--bg)"/>
+                <rect width="480" height="28" fill="var(--surface)"/>
+                <circle cx="14" cy="14" r="4" fill="#e0655a"/>
+                <circle cx="28" cy="14" r="4" fill="var(--warning)"/>
+                <circle cx="42" cy="14" r="4" fill="var(--success)"/>
+                <text x="240" y="18" text-anchor="middle" font-family="monospace" font-size="10" fill="var(--text-faint)">StudentManagementSystem.java — Swing GUI</text>
+
+                <rect x="16" y="40" width="70" height="24" rx="5" fill="var(--accent)"/>
+                <text x="51" y="56" text-anchor="middle" font-size="9" font-weight="700" fill="#06121f">+ Add</text>
+                <rect x="94" y="40" width="70" height="24" rx="5" fill="none" stroke="var(--border)"/>
+                <text x="129" y="56" text-anchor="middle" font-size="9" fill="var(--text)">Edit</text>
+                <rect x="172" y="40" width="70" height="24" rx="5" fill="none" stroke="var(--border)"/>
+                <text x="207" y="56" text-anchor="middle" font-size="9" fill="var(--text)">Delete</text>
+                <rect x="330" y="40" width="134" height="24" rx="12" fill="var(--bg-alt)" stroke="var(--border)"/>
+                <text x="397" y="56" text-anchor="middle" font-size="9" fill="var(--text-faint)">🔍 Search student…</text>
+
+                <rect x="16" y="76" width="448" height="24" rx="4" fill="var(--accent-soft)"/>
+                <text x="26" y="92" font-size="10" font-weight="700" fill="var(--accent)">ID</text>
+                <text x="80" y="92" font-size="10" font-weight="700" fill="var(--accent)">Name</text>
+                <text x="230" y="92" font-size="10" font-weight="700" fill="var(--accent)">Course</text>
+                <text x="330" y="92" font-size="10" font-weight="700" fill="var(--accent)">Year</text>
+                <text x="390" y="92" font-size="10" font-weight="700" fill="var(--accent)">Status</text>
+
+                <g font-family="Segoe UI, sans-serif" font-size="10" fill="var(--text-muted)">
+                  <text x="26" y="116">2026-001</text><text x="80" y="116">Dela Cruz, J.</text><text x="230" y="116">BSIT</text><text x="330" y="116">2nd</text>
+                  <text x="26" y="140">2026-002</text><text x="80" y="140">Ramos, K.</text><text x="230" y="140">BSCS</text><text x="330" y="140">3rd</text>
+                  <text x="26" y="164">2026-003</text><text x="80" y="164">Tan, L.</text><text x="230" y="164">BSIT</text><text x="330" y="164">1st</text>
+                  <text x="26" y="188">2026-004</text><text x="80" y="188">Uy, P.</text><text x="230" y="188">BSCS</text><text x="330" y="188">4th</text>
+                </g>
+                <text x="390" y="116" font-size="9" fill="var(--success)" font-weight="600">Active</text>
+                <text x="390" y="140" font-size="9" fill="var(--success)" font-weight="600">Active</text>
+                <text x="390" y="164" font-size="9" fill="var(--success)" font-weight="600">Active</text>
+                <text x="390" y="188" font-size="9" fill="var(--text-faint)" font-weight="600">Inactive</text>
+
+                <line x1="16" y1="204" x2="464" y2="204" stroke="var(--border)"/>
+                <text x="16" y="226" font-size="9" font-family="monospace" fill="var(--text-faint)">Records loaded from MySQL: students.db → 42 rows fetched in 0.03s</text>
+                <text x="16" y="244" font-size="9" font-family="monospace" fill="var(--text-faint)">SELECT * FROM students ORDER BY last_name ASC;</text>
+              </svg>
+            </div>
+            <p class="evidence-caption">Sample output — student records table (mock data for demonstration)</p>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>DENNIS VELEZ</h4>
+        <p>Aspiring Software Developer &amp; IT Professional, building skills one project at a time.</p>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="career-goals.html">Career Goals</a></li>
+          <li><a href="gap-analysis.html">Gap Analysis</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:dennisvelez27@gmail.com">dennisvelez27@gmail.com</a></li>
+          <li><a href="[YOUR GITHUB URL]">GitHub</a></li>
+          <li><a href="[YOUR LINKEDIN URL]">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year>2026</span> DENNIS VELEZ. All rights reserved.</span>
+      <span>Built with HTML, CSS &amp; JavaScript.</span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" type="button" aria-label="Back to top">↑</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
